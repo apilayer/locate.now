@@ -1,7 +1,7 @@
 {
   "name": "locate.now",
   "version": "1.0.0",
-  "description": "A simple API for IP address & geolocation lookup",
+  "description": "A simple API for IP address & geolocation lookup.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
