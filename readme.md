@@ -11,8 +11,8 @@
 
 <br/>
 <p align="center">
-	<code>~ ❯❯❯ curl 'https://locate.now.sh/ip/json'<br/>
-	{"ip":"127.0.0.1"}</code>
+	<code>~ ❯❯❯ curl 'https://locate.now.sh/ip/json'</code><br/>
+	<code>{"ip":"127.0.0.1"}</code>
 </p>
 
 
