@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>locate.now</title>
+	<link rel="shortcut icon" href="favicon.png">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="theme-color" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+	<style type="text/css">
+		html,
+		body {
+			background: black;
+		}
+
+		a {
+			color: white;
+			display: inline-block;
+			margin: 0 20px;
+			position: relative;
+			text-decoration: none;
+		}
+
+		a:after {
+			content: "";
+			height: 1px;
+			background: white;
+			position: absolute;
+			pointer-events: none;
+			bottom: -5px;
+			left: 0;
+			right: 0;
+			opacity: 0;
+			transform: scale(0, 1);
+			transition: all 200ms;
+		}
+
+		a:hover:after {
+			opacity: 1;
+			transform: scale(1, 1);
+		}
+
+		.heading {
+			padding-left: 10%;
+			padding-right: 10%;
+			margin-top: 50px;
+		}
+
+		.heading h1 {
+			margin-top: 10%;
+			font-size: 3.5em;
+			font-weight: 500;
+		}
+
+		.heading h3 {
+			font-size: 1.1em;
+			font-weight: lighter;
+			color: #777;
+		}
+
+		.container {
+			text-align: center;
+			position: absolute;
+			overflow: hidden;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			color: white;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+			
+			-webkit-animation: fadein 2s;
+			   -moz-animation: fadein 2s;
+			    -ms-animation: fadein 2s;
+			     -o-animation: fadein 2s;
+			        animation: fadein 2s;
+		}
+
+		.features {
+			padding-top: 3%;
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+
+		.features a {
+			font-size: 2em;
+		}
+
+		.ios p, .android p {
+			font-size: 5em;
+			margin-bottom: 0; 
+		}
+
+		@keyframes fadein {
+			from { opacity: 0; }
+			to   { opacity: 1; }
+		}
+
+		@-moz-keyframes fadein {
+			from { opacity: 0; }
+			to   { opacity: 1; }
+		}
+
+		@-webkit-keyframes fadein {
+			from { opacity: 0; }
+			to   { opacity: 1; }
+		}
+
+		.footer {
+			color: #666;
+			bottom: 20px;
+			font-size: 14px;
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		.footer a {
+			color: #666;
+			margin: 0;
+			transition: all 200ms;
+		}
+
+		.footer a:hover {
+			color: white;
+		}
+
+		.left {
+			display: inline-block;
+			margin-bottom: 30px;
+			margin-left: 0;
+			margin-right: 30px;
+		}
+
+		.right {
+			display: inline-block;
+		}
+
+		.right a {
+			display: inline-block;
+			margin-right: 30px;
+		}
+
+		.chat {
+			display: inline-block;
+		}
+
+		.chat:after {
+			content: '';
+		    width: 8px;
+		    height: 8px;
+		    display: inline-block;
+		    border-radius: 100%;
+		    background: #50e3c2;
+		    margin-left: 10px;
+		}
+
+		.chat a {
+			margin-right: 0;
+		}
+
+		@media only screen and (max-width: 40em) {
+			.left {
+				display: block;
+				margin-right: 0;
+			}
+			.right {
+				display: block;
+			}
+			.right a:last-child {
+				margin-right: 0;
+			}
+		}
+
+		pre {
+      		text-align: left;
+    	}
+
+    	.code {
+    		padding-top: 7%;
+    	  	width: 40ex;
+    	  	margin: 20px auto;
+    	  	text-align: left;
+    	}
+
+    	.code > p {
+    	  	text-align: center;
+    	}
+
+    	.code > p > a {
+    	  	color: white;
+    	}
+
+    	.code > p > a:visited {
+    	  	color: white;
+    	}
+
+	</style>
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="heading">
+			<h1>locate.now</h1>
+			<h3>A simple API for IP address & geolocation lookup.</h3>
+		</div>
+		<div class="code">
+        	  	Send this:<br>
+        	  	<pre>
+        	<a href="https://locate.now.sh/ip/json" target="_blank">https://locate.now.sh/ip/json</a>
+        	  	</pre>
+        	  	Get this:
+        	  	<pre>
+        	  {
+        	    "ip":"130.211.93.80"
+        	  }
+        	  	</pre>
+      	</div>
+		<div class="footer">
+			<div class="left">
+				© 2018 — <a href="mailto:nikolaskam@gmail.com">k4m4</a>
+			</div>
+			
+			<div class="right">
+				<a href="https://github.com/k4m4" target="_blank">Github</a>
+				<a href="https://twitter.com/nikolaskama" target="_blank">Twitter</a>
+				<div class="chat">
+					<a href="https:github.com/k4m4/locate.now" target="_blank">Docs</a>
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+</body>
+
+</html>

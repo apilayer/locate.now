@@ -1,0 +1,16 @@
+{
+	"name": "locate.now",
+	"public": false,
+	"alias": [
+		"locate.now.sh"
+	],
+	"files": [
+		".env",
+		"index.html",
+		"index.js",
+		"package.json"
+	],
+	"env": {
+		"NODE_ENV": "production"
+	}
+}
