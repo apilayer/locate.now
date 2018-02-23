@@ -1,31 +1,31 @@
-var app        = require('express')();
-var path       = require('path');
-var bodyParser = require('body-parser');
-var geoip      = require('geoip-lite');
-var helmet     = require('helmet');
-var dotenv     = require('dotenv')
-var session    = require('express-session');
+var app           = require('express')();
+var path          = require('path');
+var bodyParser    = require('body-parser');
+var cookieSession = require('cookie-session')
+var geoip         = require('geoip-lite');
+var helmet        = require('helmet');
+var dotenv        = require('dotenv')
 
-app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/index.html'));
-});
+app.use(bodyParser.urlencoded({
+    extended: false
+}));
 
 app.disable('x-powered-by')
 app.use(helmet());
 dotenv.load();
-app.use(session({
+app.use(cookieSession({
     secret: process.env.SECRET,
     cookie: {
         maxAge:60000,
         httpOnly: true,
         secure: true
-    },
-    resave: false,
-    saveUninitialized: true
+    }
 }));
+
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname + '/index.html'));
+});
 
 app.get('/ip', function(req, res) {
 	var ipAddress = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
