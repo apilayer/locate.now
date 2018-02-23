@@ -1,6 +1,6 @@
 {
   "name": "locate.now",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "description": "A simple API for IP address & geolocation lookup.",
   "author": {
