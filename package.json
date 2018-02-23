@@ -5,7 +5,7 @@
   "description": "A simple API for IP address & geolocation lookup.",
   "author": {
     "name": "Nikolaos Kamarinakis",
-    "link": "nikolaskama.me",
+    "url": "nikolaskama.me",
     "email": "nikolaskam@gmail.com"
   },
   "main": "index.js",
