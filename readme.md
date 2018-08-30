@@ -114,5 +114,3 @@ Then, run `now` from *within* the directory of locate.now:
 Copyright (c) 2018 by apilayer. Some rights reserved.
 
 `locate.now` is under the terms of the **MIT License**, following all clarifications stated in the [license file](license.md).
-
-For more information on this project you can go ahead and email me anytime at **nikolaskam{at}gmail{dot}com**.
