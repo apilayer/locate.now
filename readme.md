@@ -28,12 +28,12 @@
 https://locate.now.sh/ip/:type
 ```
 
-| API URI                                | Type    | Sample Response
-| -------------------------------------- | ------- | -------------  
-| `https://locate.now.sh`                | `text`  | `127.0.0.1`
-| `https://locate.now.sh/json`           | `json`  | `{"ip":"127.0.0.1"}`
-| `https://locate.now.sh/jsonp`          | `jsonp` | `callback({"ip":"127.0.0.1"})`
-| `https://locate.now.sh/jsonp/lookupip` | `jsonp` | `lookupip({"ip":"127.0.0.1"})`
+| API URI                                   | Type    | Sample Response
+| ----------------------------------------- | ------- | -------------  
+| `https://locate.now.sh/ip`                | `text`  | `127.0.0.1`
+| `https://locate.now.sh/ip/json`           | `json`  | `{"ip":"127.0.0.1"}`
+| `https://locate.now.sh/ip/jsonp`          | `jsonp` | `callback({"ip":"127.0.0.1"})`
+| `https://locate.now.sh/ip/jsonp/lookupip` | `jsonp` | `lookupip({"ip":"127.0.0.1"})`
 
 <u>Examples:</u>
 
