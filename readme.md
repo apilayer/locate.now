@@ -109,17 +109,9 @@ Then, run `now` from *within* the directory of locate.now:
 
 <br>
 
-# Credits
-
-- locate.now was developed as part of my Node.js learning experience. I have uploaded the code with the intention of helping out others who are also trying to learn the node environment.
-- Most of the styling was adapted from [Evil Rabbit](https://twitter.com/evilrabbit_)'s [front site](https://github.com/evilrabbit/front).
-
-
-<br>
-
 # License
 
-Copyright (c) 2018 by Nikolaos Kamarinakis. Some rights reserved.
+Copyright (c) 2018 by apilayer. Some rights reserved.
 
 `locate.now` is under the terms of the **MIT License**, following all clarifications stated in the [license file](license.md).
 
