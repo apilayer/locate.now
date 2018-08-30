@@ -75,7 +75,7 @@ https://locate.now.sh/geo
 Clone the repository and install all dependencies by running:
 
 ```
-~ ❯❯❯ git clone https://github.com/k4m4/locate.now
+~ ❯❯❯ git clone https://github.com/apilayer/locate.now
 ~ ❯❯❯ cd locate.now/
 ~/locate.now ❯❯❯ npm install
 ```
